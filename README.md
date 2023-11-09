@@ -9,4 +9,3 @@
 5. Update the components
 6. Update the pipline
 7. Update main.py
-8. Update the app.py
