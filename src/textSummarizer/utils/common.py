@@ -19,7 +19,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         e: empty file
 
     Returns:
-        ConfigBox: ConfigBox type
+        ConfigBox: ConfigBox type 
     """
     try:
         with open(path_to_yaml) as yaml_file:
