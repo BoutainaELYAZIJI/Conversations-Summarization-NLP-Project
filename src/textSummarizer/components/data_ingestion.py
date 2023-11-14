@@ -1,6 +1,6 @@
 import os 
 import zipfile
-from textSummarizer import logger
+from textSummarizer.logging import logger
 from textSummarizer.utils.common import get_size
 from textSummarizer.entity.config_entity import (DataIngestionConfig)
 import urllib.request as request

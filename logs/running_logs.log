@@ -1,0 +1,107 @@
+[2023-11-13 20:46:18,119: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-13 20:46:18,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-13 20:46:18,144: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-13 20:46:18,147: INFO: common: created directory at: artifacts]
+[2023-11-13 20:46:18,152: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-13 20:47:06,959: ERROR: stage_01_data_ingestion: <urlopen error [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant>]
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1392, in connect
+    server_hostname=server_hostname)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 850, in _create
+    self.do_handshake()
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1108, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant>
+[2023-11-13 20:47:33,128: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-13 20:47:33,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-13 20:47:33,133: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-13 20:47:33,134: INFO: common: created directory at: artifacts]
+[2023-11-13 20:47:33,135: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-13 20:47:41,408: INFO: data_ingestion:  artifacts/data_ingestion/data.zip downlaod ! with the following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 13 Nov 2023 19:47:40 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=511=iZTOFiQGlEQPEIgM3UTkyIm4mIRmUKpyb1dJBOaEJV1eIoEbVM_OG4gsnfi3KTqjrpOOTc_3x_RT-ZGbPDFPl2LsQhnN395X-sIe6ZFfXYbRx2Z8Ane6yHqLk1C7L6OmqDiLt9zgGt4KFGVLV1zfmDzUY0mdj96vehjzEJL-gYM; expires=Tue, 14-May-2024 19:47:40 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2023-11-13 20:47:41,428: ERROR: stage_01_data_ingestion: File is not a zip file]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 42, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1200, in __init__
+    self._RealGetContents()
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1267, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-13 20:54:30,193: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-13 20:54:30,226: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-13 20:54:30,228: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-13 20:54:30,229: INFO: common: created directory at: artifacts]
+[2023-11-13 20:54:30,230: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-13 20:54:30,231: ERROR: stage_01_data_ingestion: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
