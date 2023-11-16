@@ -105,3 +105,254 @@ Traceback (most recent call last):
   File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
     logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
 TypeError: 'module' object is not callable
+[2023-11-16 15:51:39,887: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 15:51:39,911: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 15:51:39,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 15:51:39,928: INFO: common: created directory at: artifacts]
+[2023-11-16 15:51:39,931: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 15:51:39,936: ERROR: stage_01_data_ingestion: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-16 15:52:52,364: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 15:52:52,372: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 15:52:52,376: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 15:52:52,378: INFO: common: created directory at: artifacts]
+[2023-11-16 15:52:52,380: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 15:52:53,824: INFO: data_ingestion:  artifacts/data_ingestion/data.zip downlaod ! with the following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 16 Nov 2023 14:52:54 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=511=N65m36OtDFb526VxcASqLDv351rGQB7YrAfiw0cOs_8-5ke5vHcceU1foIBRXY3ra57SHZxjz5r4nfqyx5WUx6XVsJZwKI9yZaFjx3jShf4Y6hC1v1X-CMpg7feYjPkdiBYDrpjz157LJDOHqHf_Gs1kXG3pZOgdvb6WIKcmMFA; expires=Fri, 17-May-2024 14:52:53 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2023-11-16 15:52:53,836: ERROR: stage_01_data_ingestion: File is not a zip file]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 42, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1200, in __init__
+    self._RealGetContents()
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1267, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-16 15:58:50,632: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 15:58:50,637: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 15:58:50,644: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 15:58:50,647: INFO: common: created directory at: artifacts]
+[2023-11-16 15:58:50,649: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 15:58:51,789: ERROR: stage_01_data_ingestion: IncompleteRead(4106 bytes read)]
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 581, in _readinto_chunked
+    n = self._safe_readinto(mvb)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 628, in _safe_readinto
+    raise IncompleteRead(bytes(mvb[0:total_bytes]), len(b))
+http.client.IncompleteRead: IncompleteRead(1310 bytes read, 4086 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 276, in urlretrieve
+    block = fp.read(bs)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 447, in read
+    n = self.readinto(b)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 481, in readinto
+    return self._readinto_chunked(b)
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 592, in _readinto_chunked
+    raise IncompleteRead(bytes(b[0:total_bytes]))
+http.client.IncompleteRead: IncompleteRead(4106 bytes read)
+[2023-11-16 15:59:26,595: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 15:59:26,601: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 15:59:26,603: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 15:59:26,605: INFO: common: created directory at: artifacts]
+[2023-11-16 15:59:26,608: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 15:59:26,610: ERROR: stage_01_data_ingestion: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 30, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-16 16:03:12,848: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:03:12,851: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:03:12,853: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:03:12,855: INFO: common: created directory at: artifacts]
+[2023-11-16 16:03:12,857: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:03:12,859: ERROR: stage_01_data_ingestion: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 35, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-16 16:05:24,163: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:05:24,166: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:05:24,170: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:05:24,171: INFO: common: created directory at: artifacts]
+[2023-11-16 16:05:24,173: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:05:24,174: ERROR: stage_01_data_ingestion: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 34, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-16 16:05:53,723: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:05:53,726: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:05:53,728: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:05:53,730: INFO: common: created directory at: artifacts]
+[2023-11-16 16:05:53,732: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:05:54,763: INFO: data_ingestion:  artifacts/data_ingestion/data.zip downlaod ! with the following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 16 Nov 2023 15:05:55 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=511=AdiVefuCYNTebN9r8vGYSOgCuSJtrIyIXP5TgI7S8O3X-CB-9APFUoSnLIsf8EAJ9EfR8XASO44HANPJytsymb_Fv7ovFESOnWFVEv3M-yEEurkyI1TxFqHAWWaAwQJYPdbIy6ps-v-w0KMc1UPAgzg_9ZdmloEROumk415JULA; expires=Fri, 17-May-2024 15:05:55 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2023-11-16 16:05:55,551: ERROR: data_ingestion: The file 'artifacts/data_ingestion/data.zip' is not a zip file.]
+[2023-11-16 16:05:55,552: ERROR: stage_01_data_ingestion: File is not a zip file]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 48, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1200, in __init__
+    self._RealGetContents()
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\zipfile.py", line 1267, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-16 16:10:04,623: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:10:04,627: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:10:04,636: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:10:04,638: INFO: common: created directory at: artifacts]
+[2023-11-16 16:10:04,640: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:10:08,779: ERROR: stage_01_data_ingestion: <urlopen error retrieval incomplete: got only 6832128 out of 7903594 bytes>]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 22, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 288, in urlretrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 6832128 out of 7903594 bytes>
+[2023-11-16 16:10:51,686: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:10:51,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:10:51,690: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:10:51,690: INFO: common: created directory at: artifacts]
+[2023-11-16 16:10:51,696: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:10:56,143: ERROR: stage_01_data_ingestion: <urlopen error retrieval incomplete: got only 6832128 out of 7903594 bytes>]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 288, in urlretrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 6832128 out of 7903594 bytes>
+[2023-11-16 16:13:24,975: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:13:24,979: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:13:24,982: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:13:24,984: INFO: common: created directory at: artifacts]
+[2023-11-16 16:13:24,986: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:13:28,319: ERROR: stage_01_data_ingestion: <urlopen error retrieval incomplete: got only 6881280 out of 7903594 bytes>]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 288, in urlretrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 6881280 out of 7903594 bytes>
+[2023-11-16 16:14:51,777: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-16 16:14:51,784: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-16 16:14:51,789: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-16 16:14:51,792: INFO: common: created directory at: artifacts]
+[2023-11-16 16:14:51,797: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-16 16:14:57,310: INFO: data_ingestion:  artifacts/data_ingestion/data.zip downlaod ! with the following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DCA:8613:12ABE21:137EF52:655631ED
+Accept-Ranges: bytes
+Date: Thu, 16 Nov 2023 15:14:54 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22068-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700147693.440912,VS0,VE1037
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1e77282c49dc09b14a13b791626c1cf3402841d9
+Expires: Thu, 16 Nov 2023 15:19:54 GMT
+Source-Age: 1
+
+]
+[2023-11-16 16:14:57,949: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]

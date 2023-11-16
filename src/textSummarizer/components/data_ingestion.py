@@ -21,9 +21,9 @@ class DataIngestion:
                 filename=self.config.local_data_file
 
             )
-            
-            logger.info(f" {filename} downlaod ! with the following info: \n{headers}")
 
+            logger.info(f" {filename} downlaod ! with the following info: \n{headers}")
+            
         else:
 
             logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
@@ -34,6 +34,7 @@ class DataIngestion:
         Extracts the zip file into the data directory
         Function returns None
         """
+
 
         #crreating zip directory first
         unzip_path = self.config.unzip_dir
