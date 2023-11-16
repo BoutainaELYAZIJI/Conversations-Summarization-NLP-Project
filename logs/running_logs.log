@@ -416,3 +416,78 @@ Traceback (most recent call last):
   File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
     logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
 TypeError: 'module' object is not callable
+[2023-11-17 00:15:32,950: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 00:15:32,982: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 00:15:32,982: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 00:15:32,982: INFO: common: created directory at: artifacts]
+[2023-11-17 00:15:32,990: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 00:15:32,990: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/main.py", line 12, in <module>
+    data_ingestion.main()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-17 00:17:37,533: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 00:17:37,533: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 00:17:37,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 00:17:37,541: INFO: common: created directory at: artifacts]
+[2023-11-17 00:17:37,541: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 00:17:37,549: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/main.py", line 12, in <module>
+    data_ingestion.main()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-17 00:18:14,285: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 00:18:14,293: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 00:18:14,293: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 00:18:14,301: INFO: common: created directory at: artifacts]
+[2023-11-17 00:18:14,301: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 00:29:51,257: INFO: data_ingestion:  artifacts/data_ingestion/data.zip downlaod ! with the following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E7FE:117BF:2B55B0C:2D17764:6556A33A
+Accept-Ranges: bytes
+Date: Thu, 16 Nov 2023 23:18:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lis1490032-LIS
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700176699.937927,VS0,VE1047
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c28421f915e8eba16180942c565916c2a7b3ec54
+Expires: Thu, 16 Nov 2023 23:23:19 GMT
+Source-Age: 1
+
+]
+[2023-11-17 00:29:51,729: INFO: main: >>>>>> stage Data Validation  completed <<<<<<
+
+x==========x]
+[2023-11-17 00:29:51,729: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 00:29:51,746: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 00:29:51,746: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 00:29:51,754: INFO: common: created directory at: artifacts]
+[2023-11-17 00:29:51,762: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-17 00:29:51,762: INFO: main: >>>>>> stage Data Validation  completed <<<<<<
+
+x==========x]
+[2023-11-17 00:41:28,011: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 00:41:28,033: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 00:41:28,044: INFO: common: created directory at: artifacts]
+[2023-11-17 00:41:28,059: INFO: common: created directory at: artifacts/data_validation]
