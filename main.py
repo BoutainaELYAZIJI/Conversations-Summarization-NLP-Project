@@ -34,8 +34,8 @@ STAGE_NAME="Data Transformation "
 
 try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        data_validation = DataTransformationTrainingPipeline()
-        data_validation.main()
+        data_transformation = DataTransformationTrainingPipeline()
+        data_transformation.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)

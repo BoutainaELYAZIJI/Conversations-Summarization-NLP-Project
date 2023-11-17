@@ -491,3 +491,49 @@ x==========x]
 [2023-11-17 00:41:28,033: INFO: common: yaml file: params.yaml loaded successfully]
 [2023-11-17 00:41:28,044: INFO: common: created directory at: artifacts]
 [2023-11-17 00:41:28,059: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-17 20:42:28,703: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 20:42:28,718: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 20:42:28,721: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 20:42:28,723: INFO: common: created directory at: artifacts]
+[2023-11-17 20:42:28,724: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 20:42:36,736: ERROR: main: <urlopen error retrieval incomplete: got only 7189120 out of 7903594 bytes>]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/main.py", line 13, in <module>
+    data_ingestion.main()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 288, in urlretrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 7189120 out of 7903594 bytes>
+[2023-11-17 20:42:47,899: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 20:42:47,905: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 20:42:47,911: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 20:42:47,915: INFO: common: created directory at: artifacts]
+[2023-11-17 20:42:47,917: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 20:42:47,926: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/main.py", line 13, in <module>
+    data_ingestion.main()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 29, in download_file
+    logger.info(f"File already exists of size : {get_size(Path(self.config.local_data_file))}")
+TypeError: 'module' object is not callable
+[2023-11-17 20:43:22,539: INFO: main: >>>>>> stage Data Validation  started <<<<<<]
+[2023-11-17 20:43:22,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-17 20:43:22,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-17 20:43:22,546: INFO: common: created directory at: artifacts]
+[2023-11-17 20:43:22,547: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-17 20:43:31,103: ERROR: main: <urlopen error retrieval incomplete: got only 6867847 out of 7903594 bytes>]
+Traceback (most recent call last):
+  File "c:/Users/pc/OneDrive - Institut National de Statistique et d'Economie Appliquee/Documents/GitHub/Text-Summarization-NLP-Project/main.py", line 13, in <module>
+    data_ingestion.main()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\pc\onedrive - institut national de statistique et d'economie appliquee\documents\github\text-summarization-nlp-project\src\textSummarizer\components\data_ingestion.py", line 21, in download_file
+    filename=self.config.local_data_file
+  File "C:\Users\pc\AppData\Local\Programs\Python\Python37\lib\urllib\request.py", line 288, in urlretrieve
+    % (read, size), result)
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 6867847 out of 7903594 bytes>
