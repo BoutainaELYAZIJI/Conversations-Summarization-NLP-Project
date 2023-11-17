@@ -14,7 +14,7 @@ data_validation:
 
 
 data_transformation:
-    root_dir: artifacts/data_transformation
+    root_dir: artifacts/data_transformation 
     data_path: artifacts/data_transformation/samsum_dataset
     tokenizer_name: google/pegasus-cnn_dailymail
 
@@ -24,6 +24,6 @@ data_trainer :
     model_name : google/pegasus-cnn_dailymail
 
 
-    
+
 
 
