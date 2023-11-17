@@ -3,7 +3,7 @@ from transformers import TrainingArguments, Trainer
 from datasets import load_dataset, load_from_disk
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import torch
-
+from textSummarizer.entity import (ModelTrainerConfig)
 
 class ModelTrainer : 
     def __init__(self , config : ModelTrainerConfig) :
